@@ -1,0 +1,4 @@
+<resources>
+    <string name="tip_amount">Tip Amount: %s</string>
+    <string name="app_name">TipCaculator</string>
+</resources>

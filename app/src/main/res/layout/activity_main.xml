@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/numberCost"
+        android:layout_width="382dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="29dp"
+        android:hint="Cost of service"
+        tools:ignore="MissingConstraints"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="386dp"
+        android:layout_height="154dp"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="72dp"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/option_amaze"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amazing (20%)"
+            tools:ignore="MissingConstraints"/>
+
+        <RadioButton
+            android:id="@+id/option_good"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good (18%)"
+            tools:ignore="MissingConstraints"/>
+
+        <RadioButton
+            android:id="@+id/option_okay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Okay (15%)"
+            tools:ignore="MissingConstraints"/>
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/roundSwitch"
+        android:layout_width="375dp"
+        android:layout_height="31dp"
+        android:checked="true"
+        android:text="Round up tip?"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <Button
+        android:id="@+id/btnCal"
+        android:layout_width="377dp"
+        android:layout_height="50dp"
+        android:text="CACULATE"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="274dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:text="Tip Amount"
+        tools:layout_editor_absoluteX="242dp"
+        tools:layout_editor_absoluteY="342dp"
+        tools:ignore="MissingConstraints"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
